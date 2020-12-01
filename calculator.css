@@ -37,15 +37,13 @@ section {
 .input-line {
     display: flex;
     justify-content: space-around;
-    /* display: grid;
-    grid-template-columns: auto; */
     width: 100%;
 }
 
 input {
     width: 100%;
     text-align: right;
-    height: 1.5rem;
+    height: 2rem;
 }
 
 button {
@@ -61,36 +59,5 @@ button {
 
 button.btn-equal {
     justify-content: flex-end;
-    height: 6rem;
-}
-
-div.operators {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-div.row-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-div.row-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-}
-div.row-3 {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    height: 1.5rem;
-    text-align: center;
-}
-div.row-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    height: 1.5rem;
-    text-align: center;
+    flex-grow: 1;
 }
