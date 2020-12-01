@@ -13,33 +13,33 @@
     <h2>Számológép</h2>
     <section class="calculator">
         <div class="input-line">
-            <input type="text">
+            <input type="text" value="">
         </div>
 
         <div class="column">
-            <button class="btn-operator">+</button>
-            <button class="btn-number">7</button>
-            <button class="btn-number">4</button>
-            <button class="btn-number">1</button>
-            <button class="btn-number">0</button>
+            <button class="btn-operator" data-op="plus" onclick="fillInput()">+</button>
+            <button class="btn-number" data-num="7" onclick="fillInput()" value="7">7</button>
+            <button class="btn-number" data-num="4" onclick="fillInput()">4</button>
+            <button class="btn-number" data-num="1" onclick="fillInput()">1</button>
+            <button class="btn-number" data-num="0" onclick="fillInput()">0</button>
         </div>
         <div class="column">
-            <button class="btn-operator">-</button>
-            <button class="btn-number">8</button>
-            <button class="btn-number">5</button>
-            <button class="btn-number">2</button>
-            <button class="btn-decimal">.</button>
+            <button class="btn-operator" data-op="min" onclick="fillInput()">-</button>
+            <button class="btn-number" data-num="8" onclick="fillInput()">8</button>
+            <button class="btn-number" data-num="5" onclick="fillInput()">5</button>
+            <button class="btn-number" data-num="2" onclick="fillInput()">2</button>
+            <button class="btn-decimal" onclick="fillInput()">.</button>
         </div>
         <div class="column">
-            <button class="btn-operator">x</button>
-            <button class="btn-number">9</button>
-            <button class="btn-number">6</button>
-            <button class="btn-number">3</button>
-            <button class="btn-clear">C</button>
+            <button class="btn-operator" data-op="mult" onclick="fillInput()">x</button>
+            <button class="btn-number" data-num="9" onclick="fillInput()">9</button>
+            <button class="btn-number" data-num="6" onclick="fillInput()">6</button>
+            <button class="btn-number" data-num="3" onclick="fillInput()">3</button>
+            <button class="btn-clear" data-clear="C" onclick="clearInput()">C</button>
         </div>
         <div class="column">
-            <button class="btn-operator">÷</button>
-            <button class="btn-equal">=</button>
+            <button class="btn-operator" data-op="div" onclick="fillInput()">÷</button>
+            <button class="btn-equal" data-equ="equ">=</button>
         </div>
         </div>
     </section>
